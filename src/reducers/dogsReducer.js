@@ -3,7 +3,7 @@ const initialState = {
   loading: true,
 };
 
-const dogsReducer = (state, action) => {
+const dogsReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
       return state;
