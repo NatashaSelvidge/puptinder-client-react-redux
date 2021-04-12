@@ -3,7 +3,7 @@ const initialState = {
   loading: true,
 };
 
-const dogsReducer = (state, action) => {
+const dogsReducer = (state = initialState, action) => {
   switch (action.type) {
     case "LOADING":
       return {
@@ -15,6 +15,11 @@ const dogsReducer = (state, action) => {
         ...state,
         loading: false,
         dogs: action.dogs,
+      };
+    case "ADD_DOG":
+      return {
+        ...state,
+        dogs: [...state.dogs, action.dog],
       };
 
     default:
