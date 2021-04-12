@@ -4,9 +4,9 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        Home
+        <h1>Welcom To PupTinder</h1>
       </div>
-    )
+    );
   }
 }
 
