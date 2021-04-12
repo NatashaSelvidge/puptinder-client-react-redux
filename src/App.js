@@ -1,9 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-<<<<<<< Updated upstream
-import Nav from "./components/Nav";
-=======
 import { getDogs } from "./actions/index";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
@@ -12,7 +9,6 @@ import About from "./components/About";
 import CenterContainer from "./components/CenterContainer";
 import ErrorPage from "./components/ErrorPage";
 import Form from "./components/Form";
->>>>>>> Stashed changes
 
 class App extends React.Component {
   componentDidMount() {
@@ -26,9 +22,14 @@ class App extends React.Component {
     return (
       <Router>
         <Nav />
-        <div className="App">
-          <h1>Hello World</h1>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/dogs" component={CenterContainer} />
+          <Route exact path="/dogs/new" component={Form} />
+          <Route component={ErrorPage} />
+        </Switch>
+        <Footer />
       </Router>
     );
   }
