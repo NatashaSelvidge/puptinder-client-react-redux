@@ -6,9 +6,9 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
-import CenterContainer from "./components/CenterContainer";
+import CenterContainer from "./components/CardContainer";
 import ErrorPage from "./components/ErrorPage";
-import Form from "./components/Form";
+import Form from "./components/FormControl";
 
 class App extends React.Component {
   componentDidMount() {
@@ -19,6 +19,7 @@ class App extends React.Component {
       return <h3>LOADING...</h3>;
     }
 
+   
     return (
       <Router>
         <Nav />

@@ -1,23 +1,34 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 export class Nav extends Component {
   render() {
     return (
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/dogs">Dogs</Link>
-        </li>
-        <li>
-          <Link to="/dogs/new">Create Dog</Link>
-        </li>
-      </ul>
+      <div className="Nav">
+        <ul>
+          <li>
+            <Link to="/" className="Nav__link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="Nav__link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/dogs" className="Nav__link">
+              Dogs
+            </Link>
+          </li>
+          <li>
+            <Link to="/dogs/new" className="Nav__link">
+              Create Dog
+            </Link>
+          </li>
+        </ul>
+      </div>
     );
   }
 }

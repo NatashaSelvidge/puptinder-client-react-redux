@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+  font-family: Lato;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav__link {
+  color: #61080a;
+  font-weight: 800;
+  font-family: Lato;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul,
+li {
+  color: #61080a;
+  text-decoration: none !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+ul:hover,
+li:hover {
+  text-decoration: none !important;
+}
+.Home {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+Button {
+  background-color: #434343 !important;
+  border-color: #0c111d !important;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home__Jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1552053831-71594a27632d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGRvZyUyMHNtaWxlJTIwb3duZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-position: 25% 28%;
+  height: 950px;
+}
+
+.footer {
+  background-color: #61080a;
+  color: white;
+  text-align: center;
+  display: flex;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid lightgray;
 }
