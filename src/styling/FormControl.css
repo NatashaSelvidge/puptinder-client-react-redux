@@ -1,0 +1,15 @@
+* {
+  margin: auto;
+  text-align: center;
+}
+
+.FormControl__formDiv. {
+  align-content: center;
+}
+.formControl__form {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin-left: 40%;
+  position: fixed;
+}
